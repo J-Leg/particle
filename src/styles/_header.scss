@@ -1,6 +1,7 @@
 #particles-js {
   background: $main;
   display: flex;
+  flex-wrap: wrap;
   vertical-align: bottom;
   width: 100%;
   min-height: 100vh;
@@ -10,6 +11,99 @@
   .particles-js-canvas-el {
     width:100% !important;
     height:100vh !important;
+  }
+}
+
+.right-block {
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  text-align: center;
+  color: #FFF;
+  position: absolute;
+  left: 85%;
+  top: 50%;
+  height: 85%;
+  width: 25%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  .title {
+    color: #FFF;
+    padding: 5px;
+  }
+  .json-block {
+    text-align: left;
+    scrollbar-width: thin;
+    z-index: 0;
+    color: #FFF;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 95%;
+    @media (max-width: 800px) {
+      height: 85%;
+    }
+  }
+  @media (max-width: 800px) {
+    font-size: 15px;
+    top: 80%;
+    left: 50%;
+    height: 25%;
+    width: 70%;
+  }
+}
+.container-fluid {
+  position: absolute;
+}
+
+.small-asides {
+  text-align: left;
+  color:#FFF;
+  position: absolute;
+  top: 80%;
+  left: 20%;
+  height: 15%;
+  margin: 0 auto;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  .title {
+    font-size: 10px;
+    display: block;
+    padding-bottom: 10px;
+    line-height: 1;
+    color: #FFF;
+    margin-top: 10px;
+    @media only screen and (min-width:$cut){
+      font-size: 25px;
+    }
+  }
+  .item {
+    font-weight: bold;
+    padding-right: 10px;
+    @media only screen and (min-width:$cut){
+      font-size: 15px;
+    }
+  }
+  .item-desc {
+    padding-right: 10px;
+    @media only screen and (min-width:$cut){
+      font-size: 15px;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    margin: 0;
+    color: #FFF;
+    &:hover{
+      color: $sec;
+    }
+    &:active {
+      color: $sec;
+    }
+  }
+
+  @media (max-width: 800px), (max-height: 200px) {
+    display: none !important;
   }
 }
 
@@ -24,13 +118,13 @@
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   .site-title {
-    font-size: 50px;
+    font-size: 20px;
     display: block;
     line-height: 1;
     color: #FFF;
     @media only screen and (min-width:$cut){
       margin: 0;
-      font-size: 100px;
+      font-size: 50px;
     }
   }
   .site-description {
@@ -40,7 +134,7 @@
     color: #FFF;
     margin-top: 10px;
     @media only screen and (min-width:$cut){
-      font-size: 40px;
+      font-size: 20px;
     }
   }
 }
@@ -118,5 +212,30 @@
       &:active {
         color: $sec;
       }
+  }
+}
+
+.footer {
+  left: 50%;  
+  bottom: 0%;
+  position: absolute;
+  text-align: center;
+  color: #FFF;
+  margin: 0 auto;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  .love {
+    color: red;
+  }
+  a {
+    text-decoration: none;
+    margin: 0;
+    color: #FFF;
+    &:hover{
+      color: $sec;
+    }
+    &:active {
+      color: $sec;
+    }
   }
 }

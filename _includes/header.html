@@ -1,19 +1,83 @@
+{% capture code %}{
+  "full_name": "James Zhang",
+  "email": "jamesz96.au@gmail.com",
+  "url": "j-leg.github.io",
+  "gender": "male",
+  "height_cm": 178,
+  "right_handed": true,
+  "hand_span_cm": 20.3,
+  "shoe_size": 10,
+  "birth_time": "1996-10-21T01:54:00.000+08:00",
+  "birth_latlng": "-33.8216083, 151.1915433",
+  "favourite_drink": "green tea",
+  "languages": [
+    "en"
+  ],
+  "interests/activities": [
+    "programming",
+    "reading",
+    "running",
+    "history",
+    "chess",
+    "Go",
+    "cooking",
+    "cloudspotting",
+    "computer games"
+  ],
+  "skills": [
+    "JavaScript/TypeScript",
+    "Node.js",
+    "React",
+    "Python",
+    "Java",
+    "C++",
+    "Go",
+    "SQL (PostgreSQL / Oracle)",
+    "NoSQL (MongoDB)",
+    "Continuous Integration (Jenkins)",
+    "Cloud (GCP)",
+    "Git",
+    "Mercurial",
+    "Vim"
+  ]
+}{% endcapture %}
+
 <div id="particles-js">
   <div class="header">
-      <h1>
-        <span class="site-title">{{site.username}}</span>
-        <span class="site-description">{{site.user_title}}</span>
-      </h1>
-      <div class="header-icons">
-        <a aria-label="Send email" href="#"><i class="icon fa fa-envelope"></i></a>
-        <a aria-label="My Twitter" target="_blank" href="#"><i class="icon fa fa-twitter" aria-hidden="true"></i></a>
-        <a aria-label="My Google Plus" target="_blank" href="#"><i class="icon fa fa-google-plus" aria-hidden="true"></i></a>
-        <a aria-label="My Github" target="_blank" href="#"><i class="icon fa fa-github-alt" aria-hidden="true"></i></a>
-      </div>
-      <div class="header-links">
-        <a class="link" href="#about" data-scroll>About Me</a>
-        <a class="link" href="#projects" data-scroll>Projects</a>
-      </div>
+    <h5>
+      <p><span class="site-title">{{site.username}}</span></p>
+    </h5>
+    <p><span class="site-description">{{site.user_title}}</span></p>
+    <div class="header-icons">
+      <a aria-label="Send email" href="mailto: jamesz96.au@gmail.com"><i class="icon fa fa-envelope"></i></a>
+      <a aria-label="My Github" target="_blank" href="https://github.com/J-Leg"><i class="icon fa fa-github" aria-hidden="true"></i></a>
+    </div>
   </div>
-  <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
+  <div class="small-asides">
+    <div class=title>Some Small Asides</div>
+    <table>
+      <tbody>
+        {% for item in site.small_asides %}
+          <tr>
+            <td class="item"><a href={{item.link}}>{{ item.title }}</a></td> 
+            <td class="item-desc">{{ item.desc }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  <div class="right-block">
+    <div class="title">me.json</div>
+    <div class="json-block">
+      {% highlight json %} {{ code }} {% endhighlight %}
+    </div>
+  </div>
+  <div class="footer">
+    <div>Built with <a href="https://jekyllrb.com/">Jekyll</a> and <span class="love">❤</span></div>
+  </div>
 </div>
+
+<script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="{{ "/assets/js/sweet-scroll.min.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/assets/js/main.js" | prepend: site.baseurl }}"></script>
+
