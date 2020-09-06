@@ -1,8 +1,7 @@
 # Site settings
-title: Personal site
+title: j-leg.github.io 
 description: Wort wort wort 
-# baseurl: "/particle" # the subpath of your site, e.g. /blog
-# url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+url: "https://j-leg.github.io" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
 username: Hi, I'm James 
