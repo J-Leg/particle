@@ -40,7 +40,7 @@
     overflow-x: hidden;
     max-height: 95%;
     @media (max-width: 800px) {
-      height: 85%;
+      height: 75%;
     }
   }
   @media (max-width: 800px) {
@@ -49,6 +49,8 @@
     left: 50%;
     height: 25%;
     width: 70%;
+    padding-top: 0px;
+    padding-bottom: 3px;
   }
 }
 .container-fluid {

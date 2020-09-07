@@ -1,5 +1,5 @@
 # Site settings
-title: j-leg.github.io 
+title: Hi, I'm James
 description: Wort wort wort 
 url: "https://j-leg.github.io" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
@@ -11,6 +11,9 @@ email: jamesz96.au@gmail.com
 twitter_username: lorem_ipsum
 github_username: J-leg 
 gplus_username:  lorem_ipsum
+
+# Animated favicons will only be visible on Firefox AFAIK
+favicon: animated_favicon.gif
 
 small_asides:
   - title: tracula
