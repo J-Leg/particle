@@ -20,7 +20,7 @@ small_asides:
     link: https://github.com/J-Leg/tracula
   - title: players.fyi
     desc: Next.js front-end component of tracula
-    link: https://github.com/J-Leg/tracula-ui
+    link: https://players.fyi/ 
   - title: clue-bot 
     desc: Node.js Reddit bot that simulates an in-game live pricing/reward system
     link: https://github.com/J-Leg/clue-bot
